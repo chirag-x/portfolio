@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Signature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-main">
+                <a href="#home">Logo</a>
+            </div>
+            <div class="nav-links">
+                <a href="#rooms">Rooms</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="book-now">
+                <a href="#">Book Now</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Custom Alert -->
+
+    <div class="custom-overlay active" id="customAlert">
+        <div class="custom-alert-box">
+            <h2>Welcome 🎶</h2>
+            <p>"Welcome to Posjects This is a Hotel Signature Website by <b>Chirag Sharma</b> !"</p>
+            <button onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Home Section -->
+
+
+        <section class="home-container" id="home">
+            <div class="home-img">
+                <img src="media/home.jpg" alt="">
+                <div class="text-overlay">
+                    <div class="home-title">
+                        <i class="fa fa-bed"></i>
+                        <h1>Hotel Signature</h1>
+                    </div>
+                    <div class="booking-form">
+                        <div class="form-row">
+                            <div>
+                                <label><i class="fa fa-calendar"></i> Check In</label>
+                                <input type="text" placeholder="DD MM YYYY">
+                            </div>
+                            <div>
+                                <label><i class="fa fa-calendar"></i> Check Out</label>
+                                <input type="text" placeholder="DD MM YYYY">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div>
+                                <label><i class="fa fa-user"></i> Adults</label>
+                                <input type="number" value="1" min="1">
+                            </div>
+                            <div>
+                                <label><i class="fa fa-child"></i> Kids</label>
+                                <input type="number" value="0" min="0">
+                            </div>
+                        </div>
+
+                        <button class="home-form-btn"><i class="fa fa-search"></i> Search availability</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Room Section -->
+
+        <section class="room" id="room">
+            <div class="room-section">
+                <h2>Rooms</h2>
+                <h3 class="room-section-h3">Make yourself at home is our slogan. We offer the best beds in the industry.
+                    Sleep well and rest
+                    well.</h3>
+                <div class="room-form">
+                    <div class="room-form-row">
+                        <div>
+                            <label><i class="fa fa-calendar"></i> Check In</label>
+                            <input type="text" placeholder="DD MM YYYY">
+                        </div>
+                        <div>
+                            <label><i class="fa fa-calendar"></i> Check Out</label>
+                            <input type="text" placeholder="DD MM YYYY">
+                        </div>
+                        <div>
+                            <label><i class="fa fa-calendar"></i> Adults</label>
+                            <input type="number" value="1" min="1">
+                        </div>
+                        <div>
+                            <label><i class="fa fa-calendar"></i> Kids</label>
+                            <input type="number" value="0" min="0">
+                        </div>
+                        <div>
+                            <label for="" style="opacity: 0;"><i>x</i></label>
+                            <button class="room-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-detail">
+                    <div class="detail">
+                        <img src="media/room_single.jpg" alt="">
+                        <div class="detail-text">
+                            <h3>Single Room</h3>
+                            <h4>From $99</h4>
+                            <p>Single bed</p>
+                            <p>15m2</p>
+                            <button class="room-btn">Choose Room</button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="media/room_double.jpg" alt="">
+                        <div class="detail-text">
+                            <h3>Double Room</h3>
+                            <h4>From $149</h4>
+                            <p>Queen-size bed</p>
+                            <p>25m2</p>
+                            <button class="room-btn">Choose Room</button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="media/room_deluxe.jpg" alt="">
+                        <div class="detail-text">
+                            <h3>Deluxe Room</h3>
+                            <h4>From $199</h4>
+                            <p>King-size bed</p>
+                            <p>40m2</p>
+                            <button class="room-btn">Choose Room</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- About Section -->
+
+        <section class="about" id="about">
+            <div class="about-main">
+                <div class="about-left">
+                    <h2>About</h2>
+                    <p>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p>We accept: </p>
+                </div>
+                <div class="about-right">
+                    <img src="media/map.jpg" alt="">
+                </div>
+            </div>
+            <div class="about-bottam">
+                <p> 423 Some adr, Chicago, US</p>
+                <p> Phone: +00 151515</p>
+                <p>Email: mail@mail.com</p>
+            </div>
+            <div class="about-end">
+                <p> On demand, we can offer playstation, babycall, children care, dog equipment, etc.</p>
+            </div>
+        </section>
+
+        <!-- Hotel Section -->
+
+        <section class="hotel" id="hotel">
+
+            <div class="hotel-main">
+                <h2>Our Hotels</h2>
+                <p>You can find our hotels anywhere in the world:</p>
+                <div class="img-box">
+                    <div class="left-img">
+                        <div class="column">
+                            <img src="media/cinqueterre.jpg" alt="Cinque Terre">
+                            <div class="left-text-block">Cinque Terre</div>
+                        </div>
+                    </div>
+                    <div class="right-img">
+
+                        <div class="column">
+                            <img src="media/newyork2.jpg" alt="New York">
+                            <div class="text-block">New York</div>
+                        </div>
+
+                        <div class="column">
+                            <img src="media/sanfran.jpg" alt="San Francisco">
+                            <div class="text-block">San Francisco</div>
+                        </div>
+
+                        <div class="column">
+                            <img src="media/pisa.jpg" alt="Pisa">
+                            <div class="text-block">Pisa</div>
+                        </div>
+
+                        <div class="column">
+                            <img src="media/paris.jpg" alt="Paris">
+                            <div class="text-block">Paris</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-end">
+                <h2>Get the best offers first!</h2>
+                <p>Join our newsletter.</p>
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Your Email address">
+                <button>Subscribe</button>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+
+        <section class="contact" id="contact">
+            <div class="contact-main">
+                <div class="contact-top">
+                    <h2>Contact</h2>
+                    <p>If you have any questions, do not hesitate to ask them.</p>
+                </div>
+                <div class="contact-contact">
+                    <p>Chicago, US</p>
+                    <p>Phone: +00 151515</p>
+                    <p>Email: mail@mail.com</p>
+                </div>
+                <div class="contact-form">
+
+                    <input type="text" placeholder="Name" required="Name">
+                    <input type="email" placeholder="Email" required="Email">
+                    <input type="text" placeholder="Message">
+                    <button class="contact-btn">Send Message</button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="footer" id="other">
+            <div class="footer-main">
+                <h2>Find Us On</h2>
+                <div class="footer-logo">
+                    <i class="fa fa-facebook-official w3-hover-opacity"><a href="#">f</a></i>
+                    <i class="fa fa-instagram w3-hover-opacity"><a href="#">i</a></i>
+                    <i class="fa fa-snapchat w3-hover-opacity"><a href="#">s</a></i>
+                    <i class="fa fa-pinterest-p w3-hover-opacity"><a href="#">p</a></i>
+                    <i class="fa fa-twitter w3-hover-opacity"><a href="#">t</a></i>
+                    <i class="fa fa-linkedin w3-hover-opacity"><a href="#">l</a></i>
+                </div>
+                <div class="footer-end">
+                    <p class="copyright">
+                        &copy; Chirag Sharma | All Right Reserved
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

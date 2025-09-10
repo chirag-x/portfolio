@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="active">HOME</a>
+            <a href="#band">BAND</a>
+            <a href="#tour">TOUR</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#footer">OTHERS</a>
+            <select class="navbar-select">
+                <option value="#" selected>CITY</option>
+                <option value="gwl">Gwalior</option>
+                <option value="bho">Bhopal</option>
+                <option value="ind">Indore</option>
+            </select>
+
+        </nav>
+    </header>
+    <!-- Custom Alert -->
+    <div class="overlay active" id="customAlert">
+        <div class="alert-box">
+            <h2>Welcome 🎶</h2>
+            <p>"Welcome to Posjects This is a Band Website by "!<b>Chirag Sharma</b> !"</p>
+            <button onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+    <!-- page main content -->
+
+    <main>
+        <div class="slideshow" id="home">
+            <div class="active">
+                <img src="Images/concert.jpg" alt="image">
+                <div class="text-overlay">
+                    <p>We love to play with sound</p>
+                </div>
+            </div>
+            <div>
+                <img src="Images/mumbaiconcerrt.jpg">
+                <div class="text-overlay">
+                    <h3>Mumbai</h3>
+                    <p>We had the best time playing at Mumbai!</p>
+                </div>
+            </div>
+            <div>
+                <img src="Images/puneconcert.jpg">
+                <div class="text-overlay">
+                    <h3>Pune</h3>
+                    <p>The atmosphere in Pune is great</p>
+                </div>
+            </div>
+            <div>
+                <img src="Images/chandigarh.jpg">
+                <div class="text-overlay">
+                    <h3>Chandigarh</h3>
+                    <p>Thank you, Chandigarh University - A night we won't forget.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- band section -->
+
+        <section class="band-section" id="band">
+            <div class="band-main">
+                <h2>THE BAND</h2>
+                <h3>We love music</h3>
+                <article>
+                    <p>
+                        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </article>
+                <!-- About artists -->
+
+                <div class="band-content">
+                    <div class="band-detail">
+                        <div class="band-detail-text">
+                            <p>Sunidhi Chauhan</p>
+                        </div>
+                        <img src="Images/Sunidhi Chauhan.jpg" alt="Sunidhi Chauhan">
+                    </div>
+                    <div class="band-detail">
+                        <div class="band-detail-text">
+                            <P> Honey Singh</P>
+                        </div>
+                        <img src="Images/honey singh.jpg" alt="Honey Singh">
+                    </div>
+                    <div class="band-detail">
+                        <div class="band-detail-text">
+                            <p>Dino James</p>
+                        </div>
+                        <img src="Images/Dino James.jpg" alt="Dino James">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tour section -->
+
+        <section class="tour-section" id="tour">
+            <div class="tour-main">
+                <div>
+                    <h2>
+                        TOUR DATES
+                    </h2>
+                    <h3>
+                        Remember to book your tickets!
+                    </h3>
+                    <div class="tour-main-div">
+                        <p>September<span class=" sold-out-span">Sold out</span></p>
+                        <p>October<span class=" sold-out-span">Sold out</span></p>
+                        <p>November<span class="span-3">3</span></p>
+                    </div>
+                </div>
+                <div class="tour-detail">
+                    <div class="detail">
+                        <img src="Images/newyork.jpg" alt="New York">
+                        <div class="detail-text">
+                            <p>New York</p>
+                            <p>Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="Images/paris.jpg" alt="Paris">
+                        <div class="detail-text">
+                            <p>New York</p>
+                            <p>Sat 28 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="Images/sanfran.jpg" alt="San Francisco">
+                        <div class="detail-text">
+                            <p>New York</p>
+                            <p>Sun 29 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+
+        <section class="contact-section" id="contact">
+            <h2>CONTACT</h2>
+            <p class="sub-heading"><em>Fan? Drop a note!</em></p>
+
+            <div class="contact-container">
+                <!-- Left Side (Contact Info) -->
+                <div class="contact-info">
+                    <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+                    <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+                    <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+                </div>
+
+                <!-- Right Side (Contact Form) -->
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Background Image -->
+
+    <img src="Images/map.jpg" alt="Map" class="mapimg">
+
+    <!-- Footer Section -->
+
+    <footer class="footer" id="footer">
+        <div class="footer-logo">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/thechirag__x?igsh=MXZ0c2MzM2s5djBjYw== "><i
+                    class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p "></i></a>
+            <a href="#"><i class="fa fa-pinterest-p "></i></a>
+            <a href="#"><i class="fa fa-twitter "></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="copyright">
+            &copy; Chirag Sharma | All Right Reserved
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
