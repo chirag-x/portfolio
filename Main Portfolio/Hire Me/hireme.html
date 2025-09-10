@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hire Me</title>
+    <link rel="stylesheet" href="hireme.css">
+
+</head>
+
+<body>
+    <section class="hireme">
+        <div class="container">
+            <h1>Hire <span>Me</span></h1>
+            <p>Are you looking for a web developer to bring your ideas to life? Whether you need a new website, a
+                redesign, or a full-stack application, I can help. Please fill out the form below with your project
+                details, and I will get back to you as soon as possible.</p>
+            <p>You can check my Services and My Projects before hireing me </p>
+            <a class="btn" href="https://portfoliochirag.freewebhostmost.com/Services/services.html">Services and My Projects</a>
+            <div class="hire-me-form">
+                <h3 class="subheading">Tell me about your project</h3>
+                <form action="[your-backend-endpoint]" method="POST">
+                    <div class="input-box">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+
+                        <label for="project-type">Project Type</label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="" disabled selected>Select project type</option>
+                            <option value="Website Development">Website Development</option>
+                            <option value="Web App Development">Web App Development</option>
+                            <option value="Website Redesign">Website Redesign</option>
+                            <option value="Website Maintenance">Website Maintenance</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                        <label for="budget">Estimated Budget</label>
+                        <select id="budget" name="budget" required>
+                            <option value="" disabled selected>Select your budget</option>
+                            <option value="5000-10000">₹5,000 - ₹10,000</option>
+                            <option value="10000-20000">₹10,000 - ₹20,000</option>
+                            <option value="20000-50000">₹20,000 - ₹50,000</option>
+                            <option value="50000+">₹50,000+</option>
+                        </select>
+
+                        <label for="timeline">Estimated Timeline</label>
+                        <select id="timeline" name="timeline" required>
+                            <option value="" disabled selected>Select your timeline</option>
+                            <option value="1-2 weeks">1-2 weeks</option>
+                            <option value="3-4 weeks">3-4 weeks</option>
+                            <option value="1-2 months">1-2 months</option>
+                            <option value="2+ months">2+ months</option>
+                        </select>
+
+                        <label for="description">Project Description</label>
+                        <textarea id="description" name="description" rows="5"
+                            placeholder="Provide a brief description of your project..." required></textarea>
+
+                        <button class="btn" type="submit">Submit Inquiry</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
